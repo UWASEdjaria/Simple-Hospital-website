@@ -1,16 +1,20 @@
 import React from 'react';
 
-function DoctorCard({ name, specialty, imageUrl }) {
+function DoctorCard({ name, specialty, imageUrl,telephone,email }) {
        
     return(
         
          
-         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-8">
-         <div className="bg-white text-black rounded-xl p-6 max-w-sm w-full text-center shadow-lg">
+         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center p-8 gap-8">
+         <div className="bg-white text-black rounded-xl p-6 max-w-sm w-full  gap-8 text-center shadow-lg">
+            <img src={imageUrl} alt={name}
+               className="w-36 h-36 rounded-full object-cover mx-auto mb-4"/>
             <h2 className="text-xl md:text-2xl font-bold mb-2">{name}</h2>
               <p className="text-blue-500 font-semibold text-lg">{specialty}</p>
-              <img src={imageUrl} alt={name}
-               className="w-36 h-36 rounded-full object-cover mx-auto mb-4"/>
+                <p className="text-gray-600 mt-2">Phone: {telephone}</p>
+                <p className="text-gray-600">Email: {email}</p>
+                
+              
                  
    </div>
    </div>

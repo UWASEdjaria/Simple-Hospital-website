@@ -57,35 +57,51 @@ function Doctors() {
     {
       name: "Dr. Alice Johnson",
       specialty: "Cardiologist",
-      imageUrl: "https://randomuser.me/api/portraits/women/44.jpg"
+      imageUrl: "https://randomuser.me/api/portraits/women/44.jpg",
+      telephone: "(123) 456-78900",
+      email: "alicejohnson@gmail.com"
     },
     {
       name: "Dr. Michael Smith",
       specialty: "Pediatrician",
-      imageUrl: "https://randomuser.me/api/portraits/men/45.jpg"
+      imageUrl: "https://randomuser.me/api/portraits/men/45.jpg",
+      telephone: "(987) 654-3210",
+      email: "micheal@gmail.com"
     },
     {
       name: "Dr. Emily Davis",
       specialty: "Neurologist",
-      imageUrl: "https://randomuser.me/api/portraits/women/46.jpg"
+      imageUrl: "https://randomuser.me/api/portraits/women/46.jpg",
+      telephone: "(555) 123-4567",
+      email: "emilydavi@gmail.com"
     },
+    {
+      name: "Dr. John Doe here",
+      specialty: "Dermatologist",
+      imageUrl: "https://randomuser.me/api/portraits/men/46.jpg",
+      telephone: "(444) 987-6543",
+      email: "johndoe@23gmail.com"
+    },
+
   ];
 
   return (
-      <div className="bg-gray-900 min-h-screen text-white p-8">
-        <h1 className="text-center text-4xl md:text-5xl font-bold mb-10">
-//         Our Doctors
-//       </h1>
+    <>
+     <h1 className="text-center text-4xl sm:text-2xl md:text-5xl font-bold mb-10">Our Doctors</h1>
+      <div className="flex flex-col md:flex-row flex-wrap gap-6 justify-center items-center bg-gray-900 min-h-screen text-white p-4">
+       
       {doctors.map((doctor, index) => (
         <DoctorCard
           key={index}
           name={doctor.name}
           specialty={doctor.specialty}
           imageUrl={doctor.imageUrl}
+          telephone={doctor.telephone}
+          email={doctor.email}
         />
       ))}
        </div>
-    
+    </>
   );
 }
 
