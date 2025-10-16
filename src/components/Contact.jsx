@@ -8,7 +8,7 @@ function Contact() {
       </h1>
 
       {/* Contact Info */}
-      <div className="flex flex-col md:flex-row justify-center items-start gap-8 md:gap-16">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
         {/* Address */}
         <div className="bg-white text-black rounded-xl p-6 max-w-sm w-full text-center shadow-lg">
           <h2 className="text-xl md:text-2xl font-bold mb-2">Address</h2>

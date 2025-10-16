@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-     <div className="flex flex-col items-center justify-center w-full h-screen bg-cover bg-center text-white p-8"
+     <div className="flex flex-col md:flex-row flex-wrap items-center justify-center w-full h-screen bg-cover bg-center text-white p-8"
          style={{
            backgroundImage: "url('hospital.jpg')",
            backgroundSize: 'cover',
